@@ -1,6 +1,8 @@
 buildscript {
     repositories {
-        jcenter()
+		// Use China mirror instead.
+        //jcenter()
+		maven{ url 'http://maven.oschina.net/content/groups/public/' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:0.12.+'
