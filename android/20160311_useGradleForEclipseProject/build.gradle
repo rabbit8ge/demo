@@ -40,5 +40,31 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
+		
+		// Different apk market uses different manifest file.
+		//one {
+		//	manifest.srcFile 'AndroidManifest1.xml'
+		//}
+		//two {
+		//	manifest.srcFile 'AndroidManifest2.xml'
+		//}
     }
+	
+	// Different apk market uses different package name.
+	productFlavors {
+		one {
+		}
+		two {
+		}
+	}
+	
+	// Sign.
+	signingConfigs {
+		myConfig {
+			storeFile file("11.keystore")
+			storePassword "111"
+			keyAlias "111"
+			keyPassword "111"
+		}
+	}
 }
