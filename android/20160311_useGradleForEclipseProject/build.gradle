@@ -59,12 +59,12 @@ android {
 	}
 	
 	// Sign.
-	signingConfigs {
-		myConfig {
-			storeFile file("11.keystore")
-			storePassword "111"
-			keyAlias "111"
-			keyPassword "111"
-		}
-	}
+	//signingConfigs {
+	//	myConfig {
+	//		storeFile file("11.keystore")
+	//		storePassword "111"
+	//		keyAlias "111"
+	//		keyPassword "111"
+	//	}
+	//}
 }
